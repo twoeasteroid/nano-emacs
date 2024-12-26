@@ -54,14 +54,6 @@
 (add-hook 'term-mode-hook
 	  (lambda () (setq buffer-display-table (make-display-table))))
 
-(setq inhibit-startup-screen t
-      inhibit-startup-message t
-      inhibit-startup-echo-area-message t
-      initial-scratch-message nil)
-(when (fboundp 'tool-bar-mode) (tool-bar-mode nil))
-(tooltip-mode 0)
-(when (fboundp 'scroll-bar-mode) (scroll-bar-mode nil))
-(menu-bar-mode 0)
 ;; (global-hl-line-mode 1)
 (setq x-underline-at-descent-line t)
 
@@ -74,6 +66,6 @@
 (setq widget-image-enable nil)
 
 ;; Hide org markup for README
-(setq org-hide-emphasis-markers t)
+;; (setq org-hide-emphasis-markers t)
 
 (provide 'nano-layout)
